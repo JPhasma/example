@@ -1,9 +1,9 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import { getAllSummaries, TeletubbySummary } from "noonoo/getAllSummaries";
+import { getAllSummaries } from "noonoo/getAllSummaries";
 
 type HomeProps = {
-  summaries: TeletubbySummary[];
+  summaries: any[];
 };
 
 const Home = ({ summaries }: HomeProps) => {
