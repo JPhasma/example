@@ -1,13 +1,6 @@
-import { GetStaticProps } from "next";
 import Head from "next/head";
-import { getAllSummaries } from "noonoo/getAllSummaries";
 
-type HomeProps = {
-  summaries: any[];
-};
-
-const Home = ({ summaries }: HomeProps) => {
-  console.log("summaries", summaries);
+const Home = () => {
   return (
     <>
       <Head>
@@ -16,19 +9,9 @@ const Home = ({ summaries }: HomeProps) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {summaries.map((summary, index) => (
-        <div key={index}>{summary.name}</div>
-      ))}
+      <div>TODO:Implement my teletubbies</div>
     </>
   );
-};
-
-export const getStaticProps: GetStaticProps<HomeProps> = async () => {
-  return {
-    props: {
-      summaries: await getAllSummaries(),
-    },
-  };
 };
 
 export default Home;

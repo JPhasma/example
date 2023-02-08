@@ -10,7 +10,7 @@ export default function Document() {
             <img alt="teletubbies logo" src="/images/teletubbies-logo.png" />
           </div>
         </div>
-        <div className=" flex mx-auto max-w-6xl justify-center">
+        <div className="w-full max-w-6xl mx-auto bg-slate-100">
           <Main />
         </div>
         <NextScript />
