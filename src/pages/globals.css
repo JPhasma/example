@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tubby {
+  display: block;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+  max-width: 800px;
+}
+
+.image_container {
+  border: 1px solid deeppink;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-right: 1em;
+  float: left;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.even .image_container {
+  float: right;
+  margin: 0 0 0 1em;
+}
+
+.image_container img {
+  margin: 0 auto;
+  display: block;
+}
+
+.traits li {
+  display: inline-block;
+  background: deeppink;
+  color: #fff;
+  padding: 0.6em;
+  border-radius: 16px;
+  margin: 0.6em;
+}
+
+.traits {
+  clear: both;
+}
